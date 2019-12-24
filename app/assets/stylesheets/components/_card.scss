@@ -1,0 +1,52 @@
+.card-info{
+  height: 400px;
+  width: 350px;
+  background: white;
+  position: absolute;
+  position: relative;
+  top: 1000px;
+  left: 125px;
+  padding: 30px;
+  justify-self: center;
+  align-self: center;
+  border-radius: 7px;
+  opacity: 0.7;
+}
+
+
+.card-info h1{
+  margin-bottom: 20px;
+  margin-top:10px;
+  color: #009779;
+  z-index: 3;
+  opacity: 1;
+}
+
+.card-info p{
+  margin-bottom: 20px;
+  margin-top:10px;
+  color: #009779;
+  z-index: 3;
+  font-size: 20px;
+}
+
+.card-option-button {
+  position:absolute;
+  margin: 0 auto;
+  left: 253px;
+  right: 16px;
+  bottom: -628px;
+  width: 52px;
+  height: 52px;
+  background: #43C6AC;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.vote-heart {
+  font-size: 30px;
+  color: white;
+}
