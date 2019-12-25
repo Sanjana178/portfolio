@@ -1,0 +1,5 @@
+<% @contents.each do |content| %>
+  <h2><%= link_to content.title, content_path(content) %></h2>
+  <p><%= content.description %></p>
+<% end %>
+
