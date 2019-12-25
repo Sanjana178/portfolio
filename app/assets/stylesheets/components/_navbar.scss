@@ -1,12 +1,22 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+nav{
+  display: grid;
+  grid-template-columns: 10% 1fr 10% 10% 12%;
+  min-height: 10vh;
+  align-items: center;
+  position: sticky !important;
+  top: 0;
+  &.nav-items{
+  display: flex;
+  }
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+header.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background:  linear-gradient(to left, #43C6AC, #191654);
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
+
+

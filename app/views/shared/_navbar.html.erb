@@ -1,0 +1,30 @@
+<% if controller_name == "pages" && action_name == "home"%>
+<header class="sticky">
+  <nav>
+    <div id="logo">
+      <a href="#wrapper-top" class="scroll"><img src= <%=asset_path('LogoDumbell.svg')%> alt="Logo"></a>
+      <h3>Fitness is a choice</h3>
+    </div>
+    <ul>
+      <li class = "about active"><a href="#page-about" class="about-link scroll">About</a></li>
+      <li class = "contact"><a href="#page-contact" class="contact-link scroll">Contact</a></li>
+      <li class = "plan"><%= link_to questionare_path do %>
+        Details <% end %> </li>
+    </ul>
+  </nav>
+</header>
+<% else %>
+<header class="sticky">
+  <nav>
+    <div id="logo">
+      <a href="#wrapper-top" class="scroll"><img src= <%=asset_path('LogoDumbell.svg')%> alt="Logo"></a>
+      <h3>Fitness is a choice</h3>
+    </div>
+    <ul>
+      <li class = "plan"><%= link_to root_path do %>
+        Back <% end %> </li>
+    </ul>
+  </nav>
+</header>
+<% end %>
+

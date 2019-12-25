@@ -1,0 +1,82 @@
+.blink_text {
+    animation:1s blinker linear infinite;
+    -webkit-animation:2s blinker linear infinite;
+    -moz-animation:2s blinker linear infinite;
+
+     color: white;
+    }
+
+    @-moz-keyframes blinker {
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @-webkit-keyframes blinker {
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @keyframes blinker {
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+}
+
+.headline b {
+    font: 100 8vh "Verdana";
+    color: white;
+    text-shadow: 0 -20px 100px, 0 0 2px, 0 0 1em #ddb10b, 0 0 0.5em #ddb10b, 0 0 0.1em #ddb10b, 0 10px 3px #000;
+}
+
+// section#starani .slider .star:nth-child(3) {
+//     -webkit-animation-duration: 18s;
+//     animation-duration: 18s;
+//     -webkit-animation-delay: 4s;
+//     animation-delay: 4s;
+//     top: 120px;
+// }
+
+// section#starani .slider .star {
+//     -webkit-animation: falling-star 10s linear infinite;
+//     animation: falling-star 10s linear infinite;
+//     -webkit-animation-delay: 2s;
+//     animation-delay: 2s;
+//     display: block;
+//     height: 2px;
+//     left: 0px;
+//     position: absolute;
+//     top: 232px;
+//     -webkit-transform: translateX(100%) rotate(0deg);
+//     transform: translateX(100%) rotate(0deg);
+//     -webkit-transform-origin: center right;
+//     transform-origin: center right;
+//     width: 100%;
+// }
+
+// header#starani .slider .star:before {
+//     background: white;
+//     border-radius: 2px;
+//     content: " ";
+//     display: block;
+//     height: 2px;
+//     left: 0px;
+//     top: 0px;
+//     width: 2px;
+// }
+
+// header#starani .slider .star:after {
+//     background: linear-gradient(90deg, rgba(255,255,255,0.2), rgba(255,255,255,0));
+//     content: " ";
+//     display: block;
+//     height: 2px;
+//     left: 2px;
+//     position: absolute;
+//     top: 0px;
+//     -webkit-transform: rotate(-20deg);
+//     transform: rotate(-20deg);
+//     -webkit-transform-origin: left center;
+//     transform-origin: left center;
+//     width: 160px;
+// }

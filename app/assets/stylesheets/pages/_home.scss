@@ -1,1 +1,31 @@
 // Specific CSS for your home-page
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Verdana, Arial, sans-serif;
+}
+
+a.about{
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
+a.contact{
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
+
+a:-webkit-any-link {
+    color: #551A8B !important;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
