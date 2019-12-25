@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <% @contents.each do |content| %>
+        <%= simple_form_for(content) do |f| %>
+          <div class="form-group">
+            <h2 class="title"><%= content.title %></h2>
+            <%= f.input :description, class: 'form-control' %>
+          </div>
+          <%= f.submit class: 'btn btn-primary' %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
