@@ -6,6 +6,8 @@
           <div class="form-group">
             <h2 class="title"><%= content.title %></h2>
             <%= f.input :description, class: 'form-control' %>
+            <%= f.input :image %>
+            <%= f.input :image_cache, as: :hidden %>
           </div>
           <%= f.submit class: 'btn btn-primary' %>
         <% end %>

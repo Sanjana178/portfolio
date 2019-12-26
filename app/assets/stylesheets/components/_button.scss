@@ -107,6 +107,27 @@
   border-radius: 7px;
 }
 
+.contact-button-just{
+  position: absolute;
+  top: 92%;
+  left: 26%;
+  transform: translate(-20%, -70%);
+  color: #551A8B;
+  z-index: 3;
+  border: solid 2px #009779;
+  background: #009779;
+  padding: 5px;
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 72%;
+}
+
+.contact-button-just:hover{
+  color: white;
+  opacity: 0.7;
+}
+
 .contact-button:hover{
   color: white;
   opacity: 0.7;
