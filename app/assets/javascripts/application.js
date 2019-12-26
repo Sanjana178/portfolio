@@ -1,18 +1,15 @@
 //= require rails-ujs
 //= require_tree .
+var hero = document.querySelector('.hero');
+var slider = document.querySelector('.slider');
+var logo = document.querySelector('#logo');
+var headline = document.querySelector('.headline');
+var about = document.querySelector('.about');
+var navcontact = document.querySelector('.contact');
+var sticky = document.querySelector('.sticky');
+var contactbutton = document.querySelector('.contact-button');
 
-const twMax = () => {
-
-const hero = document.querySelector('.hero');
-const slider = document.querySelector('.slider');
-const logo = document.querySelector('#logo');
-const headline = document.querySelector('.headline');
-const about = document.querySelector('.about');
-const navcontact = document.querySelector('.contact');
-const sticky = document.querySelector('.sticky');
-const contactbutton = document.querySelector('.contact-button');
-
-const tl = new TimelineMax();
+var tl = new TimelineMax();
 
 tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut})
   .fromTo(hero, 1.2, {width: "100%"}, {width: "80%", ease: Power2.easeInOut})
@@ -24,10 +21,6 @@ tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut})
   .fromTo(contactbutton, 0.5, {opacity: 0, x: 30}, {opacity: 1, x: 0}, "-=0.5")
   .fromTo(sticky, 0.5, {opacity: 0, x: 30}, {opacity: 1, x: 0}, "-=0.5");
 
-};
-
-
-twMax();
 
 $(document).ready(function() {
 
@@ -57,7 +50,7 @@ $(document).ready(function() {
   })
 })
 
-  let aboutLink = $('.about');
+  var aboutLink = $('.about');
 
   //On click animation
   aboutLink.click(function(e) {
@@ -66,7 +59,7 @@ $(document).ready(function() {
     .to(".card-info",2,{ x:05, opacity:0.7 , ease: Power2.easeInOut } ,'-=0.5');
   })
 
-  let contactLink = $('.contact');
+  var contactLink = $('.contact');
   contactLink.click(function(e) {
     var tl = new TimelineLite();
     tl.from(".sc-ckVGcZ",1.5,{ y:-100 , opacity:0 , ease: Power2.easeInOut })
