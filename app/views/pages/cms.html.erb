@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row">
+  <div class="row d-flex justify-content-center">
     <div class="col-12">
       <% @contents.each do |content| %>
         <%= simple_form_for(content) do |f| %>
@@ -12,6 +12,10 @@
           <%= f.submit class: 'btn btn-primary' %>
         <% end %>
       <% end %>
+      <div class="div">
+        <p></p>
+        <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: 'btn btn-success' %>
+      </div>
     </div>
   </div>
 </div>

@@ -21,6 +21,9 @@ tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut})
   .fromTo(contactbutton, 0.5, {opacity: 0, x: 30}, {opacity: 1, x: 0}, "-=0.5")
   .fromTo(sticky, 0.5, {opacity: 0, x: 30}, {opacity: 1, x: 0}, "-=0.5");
 
+tl.onCompleteCallback( function() {    this.group.remove(this);});
+
+
 
 $(document).ready(function() {
 
