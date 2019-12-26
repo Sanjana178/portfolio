@@ -32,7 +32,7 @@ class ContentsController < ApplicationController
   private
 
   def content_params
-    params.require(:content).permit(:title, :description)
+    params.require(:content).permit(:title, :description, :image)
   end
 
   def set_content

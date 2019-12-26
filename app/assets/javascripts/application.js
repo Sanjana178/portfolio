@@ -56,12 +56,14 @@ $(document).ready(function() {
   aboutLink.click(function(e) {
     var tl = new TimelineLite();
     tl.from(".card-info",2,{ x:-100 , opacity:0 , ease: Power2.easeInOut })
-    .to(".card-info",2,{ x:05, opacity:0.7 , ease: Power2.easeInOut } ,'-=0.5');
+    .to(".card-info",2,{ x:05, opacity:0.7 , ease: Power2.easeInOut } ,'+=0.5');
+    tl.from(".card-info1",1,{ x:100 , opacity:0 , ease: Power2.easeInOut })
+    .to(".card-info1",1,{ x:05, opacity:0.7 , ease: Power2.easeInOut } ,'+=.5');
   })
 
   var contactLink = $('.contact');
   contactLink.click(function(e) {
     var tl = new TimelineLite();
     tl.from(".sc-ckVGcZ",1.5,{ y:-100 , opacity:0 , ease: Power2.easeInOut })
-    .to(".sc-ckVGcZ",1.5,{ y:05, opacity:0.7 , ease: Power2.easeInOut } ,'-=0.5');
+    .to(".sc-ckVGcZ",1.5,{ y:05, opacity:0.7 , ease: Power2.easeInOut } ,'+=0.5');
   })

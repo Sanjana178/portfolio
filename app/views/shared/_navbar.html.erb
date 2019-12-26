@@ -8,8 +8,10 @@
     <ul>
       <li class = "about active"><a href="#page-about" class="about-link scroll">About</a></li>
       <li class = "contact"><a href="#page-contact" class="contact-link scroll">Contact</a></li>
-      <li class = "plan"><%= link_to questionare_path do %>
+      <li><%= link_to questionare_path, class: "plan" do %>
         Details <% end %> </li>
+      <li><%= link_to cms_path, class: "cms" do %>
+        Admin <% end %> </li>
     </ul>
   </nav>
 </header>

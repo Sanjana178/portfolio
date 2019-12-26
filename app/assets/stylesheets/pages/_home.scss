@@ -17,6 +17,14 @@ a.contact{
   text-decoration: none !important;
   list-style-type: none !important;
 }
+.plan{
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
+.cms{
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
 
 a:-webkit-any-link {
     color: #551A8B !important;
@@ -28,4 +36,6 @@ ul{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  list-style-type: none !important;
 }
+
