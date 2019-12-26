@@ -36,7 +36,7 @@ puts 'Creating about...'
 
 about = Content.new({
   title: "About",
-  description: "<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dignissimos, omnis esse. Quos porro iure ipsam facere cum at! Qui, sit. Deserunt nihil, animi voluptate accusamus sunt distinctio magni labore.</div><div>Odit voluptatum autem, libero omnis facilis architecto voluptatibus, blanditiis accusantium placeat ad vel rem numquam quae non aspernatur modi illo inventore rerum. Architecto dolore, et nostrum repudiandae quidem corporis soluta.</div>"
+  description: "Passionate about helping others achieve their fitness and weight-loss goals, I provide high-energy programs combining the latest techniques in nutrition and exercise science."
 })
 
 about.user_id = user1.id
