@@ -1,7 +1,8 @@
 <section id="wrapper-top">
   <div class="hero">
+    <% @headline = @contents.find {|content| content[:title] == "Headline"}.description %>
     <img src=<%= @contents.find {|content| content[:title] == "Headline"}.image %> alt="">
-    <h1 class="headline"><b>T<span class="blink_text">i</span>na<span class="blink_text"> D</span>amon</b></h1>
+    <h1 class="headline"><b><%= @headline[0] %><span class="blink_text"><%= @headline[1] %></span><%= @headline[2]%><%=@headline[3]%><span class="blink_text"> <%= @headline[4] %></span><%= @headline[5]%><%=@headline[6]%><%= @headline[7]%><%=@headline[8]%> </b></h1>
     <a class = "contact-button scroll" href="#page-contact">Contact me!</a>
   </div>
 </section>
@@ -15,7 +16,7 @@
 </section>
 
 <section>
-  <div id ="wrapper-just">
+  <div id ="wrapper-just", style="background-image: url('<%= cl_image_path @contents.find {|content| content[:title] == "About"}.image, height: 300, width: 400, crop: :fill %>'); background-repeat: no-repeat;background-attachment: fixed; background-position: center;">
     <div class="just">
       <div class="card">
           <h2>DO YOU WANT ONLINE COACHING?</h2>
@@ -109,6 +110,7 @@
 
     </div>
   </div>
+
 </section>
 
 <section id ="wrapper-just1">
