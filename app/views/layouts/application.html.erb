@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Tina Damon</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <%= favicon_link_tag asset_path('Iconfav.png') %>
     <%= csrf_meta_tags %>
@@ -15,6 +16,8 @@
     <%= render 'shared/navbar' %>
     <%= yield %>
     <%= render 'shared/footer' %>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha256-ABrLsV2caVEMCBfm3eNhv/CYQG+tGCqzw2f4b/Pag0M=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha256-v/YsEqWkVsiNHryCWg+vjC/eDBakMAgOsCJRa0kNPOg=" crossorigin="anonymous"></script>
     <%= javascript_include_tag 'application' %>
